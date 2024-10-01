@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
 
+@font-face {
+  font-family: 'Mono Sans';
+  src: url('../src/fonts/Mona-Sans.ttf') format('truetype');
 }
-p::selection {
-    background: red;
+
+body {
+  font-family: 'Mono Sans', sans-serif;
+}
+
+:root{
+    background-color: #f8f7f4;
+}
+
+*::selection {
+     background: rgb(249, 233, 190);
 }

@@ -1,52 +1,62 @@
+import { Logo } from "../../common/Home/Logo";
+import { IoSearchOutline } from "react-icons/io5";
+import { Button } from "../../common/Buttons/Button";
+import { HiMenuAlt2 } from "react-icons/hi";
+// import { RxCross2 } from "react-icons/rx";
+// import { IoMdHeart } from "react-icons/io";
+// import { TbEyeFilled } from "react-icons/tb";
+// import { CiHeart } from "react-icons/ci";
+// import { CiBookmark } from "react-icons/ci";
+// import { BiShare } from "react-icons/bi";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaFacebookSquare } from "react-icons/fa";
+// import { FaPinterest } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaAngleDown } from "react-icons/fa6";
+
+import '../../index.css'
+import { SearchBar } from "./SearchBar";
+import { WhiteButton } from "../../common/Buttons/WhiteButton";
 
 export const Navbar = () => {
     return (
-        <div className="group relative cursor-pointer py-2">
+        <div className="flex flex-col px-5 md:px-10 max-h-12 py-6 ">
+            <div className="flex justify-between md:hidden">
 
-            <div className="flex items-center justify-between space-x-5 bg-white px-4">
-                <a className="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4">
-                    Choose Day
-                </a>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                        stroke="currentColor" className="h-6 w-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                </span>
-            </div>
+                <div className="flex items-center gap-3">
+                    <HiMenuAlt2 className="text-4xl hover:cursor-pointer" />
+                    <Logo />
+                </div>
 
-            <div
-                className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Sunday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Monday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Tuesday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Wednesday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Thursday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Friday
-                </a>
-
-                <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    Saturday
-                </a>
+                <div className="flex items-center gap-2">
+                    <IoSearchOutline className="text-lg md:text-3xl hover:cursor-pointer" />
+                    <Button onClick={() => console.log('bt')} styles={'font-serif'} flag={false} Component={<></>} text={'Sign up'} />
+                </div>
 
             </div>
+
+            <div className="hidden md:flex">
+                <div>
+                    <nav>
+                        <a>Find designers</a>
+                        <a>Inspiration</a>
+                        <a>Jobs</a>
+                        <a>Go Pro</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <Logo />
+                </div>
+
+                <div>
+                    <SearchBar/>
+                    <Button onClick={() => console.log('bt')} styles={''} flag={false} Component={<></>} text={'Login Button'} />
+                    <WhiteButton onClick={() => console.log('bt')} styles={''} flag={false} Component={<></>} text={'Sign in with Google'} />
+                </div>
+
+            </div>
+
         </div>
     )
 }

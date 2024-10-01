@@ -3,10 +3,11 @@ import { Home } from "./pages/Home"
 import { Error } from "./pages/common/Error"
 import { Login } from "./pages/auth/Login";
 import { Signup } from "./pages/auth/Signup";
+
 function App() {
 
     return (
-        <div className="bg-bgcolor">
+        <div >
             <Routes>
                 <Route path="/" index element={<Home />} />
                 <Route path="/login" element={<Login />} />
