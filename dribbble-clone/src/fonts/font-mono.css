@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "mono";
+  src: url("../fonts/Mona-Sans.ttf") format("truetype");
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif,"mono sans", mono;
+}

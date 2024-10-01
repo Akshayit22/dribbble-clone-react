@@ -1,3 +1,4 @@
+import { HeroSection } from "../components/home/HeroSection"
 import { Navbar } from "../components/home/Navbar"
 // import { TextLink } from "../common/Home/TextLink"
 // import { Button } from "../common/Buttons/Button"
@@ -8,6 +9,7 @@ export const Home = () => {
     return (
         <div>
             <Navbar/>
+            <HeroSection/>
             
             {/* <p className="">Lorem ipsum dolor sit amet consectetu</p> 
             <TextLink text={'sample'} styles={''} />

@@ -1,52 +1,31 @@
+import { TextLink } from "../../common/Home/TextLink"
+import { FaAngleDown } from "react-icons/fa6";
 
-export const Dropdown = () => {
-  return (
-      <div className="group relative cursor-pointer py-2">
+export const Dropdown = ({styles}:any) => {
+    return (
+        <div className={`group relative cursor-pointer ${styles}`}>
 
-          <div className="flex items-center justify-between space-x-5 bg-white px-4">
-              <a className="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4">
-                  Choose Day
-              </a>
-              <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                      stroke="currentColor" className="h-6 w-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-              </span>
-          </div>
+            <div className="flex items-center justify-between gap-1">
+                <TextLink text={"Find designers"} styles={"menu-hover"} />
+                <FaAngleDown />
+            </div>
 
-          <div
-              className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-50 flex flex-col w-[16vw] bg-white rounded-2xl py-1 mt-5 text-gray-500 group-hover:visible">
 
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Sunday
-              </a>
+                <div className="p-5 space-y-4">
+                    <div>
+                        <p className="text-base text-gray-600">Designer search</p>
+                        <p className="text-sm">Quickly find your next designer</p>
+                    </div>
+                    <div>
+                        <p className="text-base text-gray-600">Post a job</p>
+                        <p className="text-sm space-x-0.5">The #1 job board for designers</p>
+                    </div>
+                </div>        
 
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Monday
-              </a>
+                
 
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Tuesday
-              </a>
-
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Wednesday
-              </a>
-
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Thursday
-              </a>
-
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Friday
-              </a>
-
-              <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                  Saturday
-              </a>
-
-          </div>
-      </div>
-  )
+            </div>
+        </div>
+    )
 }
