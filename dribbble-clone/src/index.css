@@ -14,6 +14,7 @@ body {
 
 :root{
     background-color: #f8f7f4;
+    --yellowbg:255, 218, 121;
 }
 
 *::selection {

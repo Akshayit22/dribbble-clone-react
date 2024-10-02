@@ -1,5 +1,7 @@
 // import { DesignerCarousel } from "../../common/HorizontalScroll/DesignerCarousel"
 
+import InfiniteScrollCards from "../../common/Footer/InfiniteScrollCards"
+
 // import DesignGrid from "../../common/Designs/DesignGrid"
 
 export const Login = () => {
@@ -8,6 +10,7 @@ export const Login = () => {
 
         {/* <DesignerCarousel/> */}
           {/* <DesignGrid/> */}
+          <InfiniteScrollCards/>
     </div>
   )
 }
