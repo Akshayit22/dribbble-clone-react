@@ -8,10 +8,6 @@ import { RxCross2 } from "react-icons/rx";
 // import { CiHeart } from "react-icons/ci";
 // import { CiBookmark } from "react-icons/ci";
 // import { BiShare } from "react-icons/bi";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaFacebookSquare } from "react-icons/fa";
-// import { FaPinterest } from "react-icons/fa";
-// import { FaTwitter } from "react-icons/fa";
 // import { FaAngleDown } from "react-icons/fa6";
 
 import '../../index.css'
