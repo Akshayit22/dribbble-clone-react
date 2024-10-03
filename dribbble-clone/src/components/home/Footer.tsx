@@ -9,13 +9,13 @@ export const Footer = () => {
         <div>
             <div className="pt-16 bg-white">
                 <InfiniteScrollCards />
-                <div className="mx-32 px-8">
+                <div className="md:mx-32 px-8">
 
-                    <div className="pt-20 pb-11 flex justify-between items-center">
+                    <div className="pt-20 pb-11 flex flex-col md:flex-row justify-between items-center text-center gap-5">
                         <div>
                             <Logo />
                         </div>
-                        <div className="flex gap-10 font-medium">
+                        <div className="flex flex-wrap gap-4 justify-center md:gap-6 lg:gap-10 font-medium">
                             <FooterLink text={'For designers'} />
                             <FooterLink text={'Hire talent'} />
                             <FooterLink text={'Inspiration'} />
@@ -25,7 +25,7 @@ export const Footer = () => {
                             <FooterLink text={'Careers'} />
                             <FooterLink text={'Support'} />
                         </div>
-                        <div className="flex gap-3 text-xl hover:cursor-pointer">
+                        <div className="flex gap-4 text-xl hover:cursor-pointer">
                             <FaTwitter />
                             <FaFacebookSquare />
                             <FaInstagram />
@@ -33,14 +33,14 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="py-11 flex justify-between items-center font-sans text-black text-sm opacity-50">
-                        <div className="flex gap-4">
+                    <div className="py-11 flex flex-wrap justify-between items-center font-sans text-black text-sm opacity-50">
+                        <div className="flex gap-3 md:gap-4 mx-auto">
                             <p>© 2024 Dribbble</p>
                             <a href="">Terms</a>
                             <a href="">Privacy</a>
                             <a href="">Cookies</a>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex flex-wrap gap-2 md:gap-4 mx-auto">
                             <a href="">Jobs</a>
                             <a href="">Designers</a>
                             <a href="">Freelancers</a>

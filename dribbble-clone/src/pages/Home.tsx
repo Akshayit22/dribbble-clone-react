@@ -8,7 +8,7 @@ import { Navbar } from "../components/home/Navbar"
 
 export const Home = () => {
     return (
-        <div>
+        <div className="w-full">
             <Navbar/>
             <HeroSection/>
             <Footer/>

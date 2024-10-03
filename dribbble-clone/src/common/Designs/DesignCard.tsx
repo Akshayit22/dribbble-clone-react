@@ -1,4 +1,4 @@
-import { FaRegBookmark, FaRegHeart, FaEye } from 'react-icons/fa';
+import { FaRegBookmark, FaRegHeart } from 'react-icons/fa';
 import { TbEyeFilled } from "react-icons/tb";
 export const DesignCard = ({ design }:any) => {
     const { image_url, image_info, redirect_url, like_count, views_count, user_information } = design;
