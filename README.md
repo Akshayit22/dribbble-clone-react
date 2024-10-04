@@ -2,6 +2,7 @@
 
 ```
 └── Tripit-clone
+    ├── README.md
     ├── dribbble-clone
     │   ├── README.md
     │   ├── eslint.config.js
@@ -32,10 +33,15 @@
     │   │   │   │   ├── Logo.tsx
     │   │   │   │   ├── TextLink.tsx
     │   │   │   │   └── designer-data.json
-    │   │   │   └── HorizontalScroll
-    │   │   │       ├── DesignerCarousel.tsx
-    │   │   │       └── Designers.tsx
+    │   │   │   ├── HorizontalScroll
+    │   │   │   │   ├── DesignerCarousel.tsx
+    │   │   │   │   └── Designers.tsx
+    │   │   │   └── auth
+    │   │   │       └── AuthPages.tsx
     │   │   ├── components
+    │   │   │   ├── auth
+    │   │   │   │   ├── LoginForm.tsx
+    │   │   │   │   └── SignupForm.tsx
     │   │   │   └── home
     │   │   │       ├── ColoredHeading.tsx
     │   │   │       ├── Dropdown.tsx
