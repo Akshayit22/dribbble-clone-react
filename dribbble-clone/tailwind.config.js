@@ -8,7 +8,8 @@ export default {
         yellowbg: "rgba(var(--yellowbg))",
       },
       animation: {
-        "loop-scroll": "loop-scroll 50s linear infinite",
+        "loop-scroll-hero": "loop-scroll 100s linear infinite",
+        "loop-scroll-footer": "loop-scroll 60s linear infinite",
       },
       keyframes: {
         "loop-scroll": {

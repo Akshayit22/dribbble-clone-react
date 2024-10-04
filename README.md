@@ -31,6 +31,7 @@
     │   │   │   │   └── data-2.json
     │   │   │   ├── Footer
     │   │   │   │   ├── FooterLink.tsx
+    │   │   │   │   ├── FooterScrollCard.tsx
     │   │   │   │   ├── InfiniteScrollCards.tsx
     │   │   │   │   └── footer-data.json
     │   │   │   ├── Home
@@ -65,7 +66,8 @@
     │   │   │   │   ├── Login.tsx
     │   │   │   │   └── Signup.tsx
     │   │   │   └── common
-    │   │   │       └── Error.tsx
+    │   │   │       ├── Error.tsx
+    │   │   │       └── Try.tsx
     │   │   └── vite-env.d.ts
     │   ├── tailwind.config.js
     │   ├── tsconfig.app.json
