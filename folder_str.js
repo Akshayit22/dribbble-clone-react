@@ -73,7 +73,7 @@ function writeDirectoryStructureToFile() {
     let structure = `└── Tripit-clone\n`;
     structure += getDirectoryStructure(currentDir, 1, [true]);
     //const deployedUrl = "https://anupkumarmridha.github.io/Tripit-Clone/tripit-clone/dist/";
-    const content = `# Project Directory Structure\n\n\`\`\`\n${structure}\`\`\`\n`;
+    const content = `#Deployment URL\n\n##<h1>Live Project : <a href="https://dribbble-clone-react.vercel.app/">https://dribbble-clone-react.vercel.app/</a></h1> \n\n# Project Directory Structure\n\n\`\`\`\n${structure}\`\`\`\n`;
     fs.writeFileSync(outputFileName, content);
     console.log(`Directory structure written to ${outputFileName}`);
 }
