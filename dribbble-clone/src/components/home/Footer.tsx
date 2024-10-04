@@ -8,11 +8,13 @@ export const Footer = () => {
     return (
         <div>
             <div className="pt-16 bg-white">
+
                 <InfiniteScrollCards />
+
                 <div className="md:mx-32 px-8">
 
                     <div className="pt-20 pb-11 flex flex-col md:flex-row justify-between items-center text-center gap-5">
-                        <div>
+                        <div className="scale-110">
                             <Logo />
                         </div>
                         <div className="flex flex-wrap gap-4 justify-center md:gap-6 lg:gap-10 font-medium">
