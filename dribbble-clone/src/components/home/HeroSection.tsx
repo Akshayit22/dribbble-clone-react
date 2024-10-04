@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { Button } from '../../common/Buttons/Button'
 import { WhiteButton } from '../../common/Buttons/WhiteButton'
 import DesignGrid from '../../common/Designs/DesignGrid'
@@ -6,6 +7,9 @@ import { ColoredHeading } from './ColoredHeading'
 
 
 export const HeroSection = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className='flex flex-col items-center justify-center pt-16'>
 
@@ -13,7 +17,7 @@ export const HeroSection = () => {
                 <ColoredHeading />
                 <p className='mx-16 text-3xl md:text-7xl text-center font-serif'>The world{'’'}s destination for design</p>
                 <p className='md:text-xl font-semibold mx-5 text-center'>Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
-                <Button onClick={() => console.log('get started')} styles={''} flag={false} Component={<></>} text={'Get started'} />
+                <Button onclick={() => navigate('/signup') } styles={''} flag={false} Component={<></>} text={'Get started'} />
             </div>
 
             <DesignerCarousel />

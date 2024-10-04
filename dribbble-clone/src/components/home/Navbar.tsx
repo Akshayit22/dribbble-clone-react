@@ -15,10 +15,12 @@ import { SearchBar } from "./SearchBar";
 import { useState } from "react";
 import { Dropdown } from "./Dropdown";
 import { TextLink } from "../../common/Home/TextLink";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
 
     const [toggle, setToggle] = useState(true);
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -36,7 +38,7 @@ export const Navbar = () => {
 
                     <div className="flex items-center gap-2">
                         <IoSearchOutline className="text-lg md:text-3xl hover:cursor-pointer" />
-                        <Button onClick={() => console.log('bt')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                        <Button onclick={() => navigate('/signup')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
                     </div>
                 </div>
 
@@ -57,13 +59,14 @@ export const Navbar = () => {
 
                     <div className="flex gap-5">
                         <SearchBar />
-                        <TextLink text={'Log in'} styles={'text-center flex items-center '} />
-                        <Button onClick={() => console.log('bt')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                        <TextLink text={'Log in'} onclick={() => navigate('/login')} styles={'text-center flex items-center '} />
+                        <Button onclick={() => navigate("/signup")} styles={''} flag={false} Component={<></>} text={'Sign up'} />
                     </div>
 
                 </div>
             </div>
 
+            {/* Mobile view on toggle */}
             {
                 !toggle && (
                     <div className="absolute w-full z-10 md:hidden bg-white">
@@ -97,7 +100,7 @@ export const Navbar = () => {
                             </div>
 
                             <div className="border-t mt-3 ">
-                                <TextLink text={'Log in'} styles={'pt-6'} />
+                                <TextLink onclick={()=>navigate('/login')} text={'Log in'} styles={'pt-6'} />
                             </div>
 
                         </div>

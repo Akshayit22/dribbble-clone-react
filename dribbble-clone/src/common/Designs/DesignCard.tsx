@@ -1,5 +1,6 @@
 import { FaRegBookmark, FaRegHeart } from 'react-icons/fa';
 import { TbEyeFilled } from "react-icons/tb";
+import { FaHeart } from "react-icons/fa6";
 export const DesignCard = ({ design }:any) => {
     const { image_url, image_info, redirect_url, like_count, views_count, user_information } = design;
 
@@ -40,7 +41,7 @@ export const DesignCard = ({ design }:any) => {
 
                     <div className='flex gap-3 '>
                         <span className="flex items-center">
-                            <FaRegHeart className="mr-1 text-gray-400" /> {like_count}
+                            <FaHeart className="mr-1 text-gray-400 hover:cursor-pointer hover:text-pink-400" /> {like_count}
                         </span>
                         <span className="flex items-center ">
                             <TbEyeFilled className="mr-1 text-gray-400" /> {(views_count / 1000).toFixed(1)}k
