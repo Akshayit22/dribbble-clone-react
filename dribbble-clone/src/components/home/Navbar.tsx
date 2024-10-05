@@ -1,30 +1,39 @@
-import { Logo } from "../../common/Home/Logo";
-import { IoSearchOutline } from "react-icons/io5";
-import { Button } from "../../common/Buttons/Button";
-import { HiMenuAlt2 } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
-// import { IoMdHeart } from "react-icons/io";
-// import { TbEyeFilled } from "react-icons/tb";
-// import { CiHeart } from "react-icons/ci";
-// import { CiBookmark } from "react-icons/ci";
-// import { BiShare } from "react-icons/bi";
-// import { FaAngleDown } from "react-icons/fa6";
-
 import '../../index.css'
-import { SearchBar } from "./SearchBar";
+
 import { useState } from "react";
 import { Dropdown } from "./Dropdown";
-import { TextLink } from "../../common/Home/TextLink";
+import { SearchBar } from "./SearchBar";
+import { RxCross2 } from "react-icons/rx";
+import { HiMenuAlt2 } from "react-icons/hi";
+import { Logo } from "../../common/Home/Logo";
 import { useNavigate } from "react-router-dom";
+import { IoSearchOutline } from "react-icons/io5";
+import { Button } from "../../common/Buttons/Button";
+import { TextLink } from "../../common/Home/TextLink";
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../../services/redux/slices/AuthSlice';
 
 export const Navbar = () => {
 
     const [toggle, setToggle] = useState(true);
+
+    const { user, isLoggedIn } = useSelector((state: any) => state);
+
+    console.log(user, isLoggedIn);
+
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const profileImage = 'https://cdn.dribbble.com/assets/avatar-default-5c629cb49eac40967b7fc4762c7232c2b5f2673acef772ae404c8b0d07b0d7fb.gif';
+
+    const handleLogout = () =>{
+        dispatch(logout());
+        navigate('/');
+    }
 
     return (
         <div>
             <div className="flex flex-col px-5 md:pr-10 md:pl-8 py-6 gap-2">
+                {/* Mobile view before toggle */}
                 <div className="flex justify-between md:hidden">
                     <div className="flex items-center gap-3 transition-all duration-200">
                         {
@@ -37,8 +46,17 @@ export const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-2">
-                        <IoSearchOutline className="text-lg md:text-3xl hover:cursor-pointer" />
-                        <Button onclick={() => navigate('/signup')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                        <IoSearchOutline className="text-xl md:text-3xl hover:cursor-pointer" />
+
+                        {
+                            isLoggedIn ?
+                                (
+                                    <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' />
+                                ) :
+                                (
+                                    <Button onclick={() => navigate('/signup')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                                )
+                        }
                     </div>
                 </div>
 
@@ -58,10 +76,40 @@ export const Navbar = () => {
 
                     </div>
 
-                    <div className="flex gap-5">
+                    <div className="flex gap-4">
                         <SearchBar />
-                        <TextLink text={'Log in'} onclick={() => navigate('/login')} styles={'text-center flex items-center '} />
-                        <Button onclick={() => navigate("/signup")} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                        {
+                            !isLoggedIn ?
+                                (
+                                    <>
+                                        <TextLink text={'Log in'} onclick={() => navigate('/login')} styles={'text-center flex items-center '} />
+                                        <Button onclick={() => navigate("/signup")} styles={''} flag={false} Component={<></>} text={'Sign up'} />
+                                    </>
+                                ) :
+                                (
+                                    <div className='group'>
+                                        <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' />
+
+                                        <div className='pt-7 w-80 rounded-xl border invisible opacity-0 absolute top-24 right-10 z-50 group-hover:opacity-100 group-hover:visible transition-all duration-500 bg-white'>
+                                            <div className='p-8 '>
+                                                <div className='mb-5 flex flex-col justify-center items-center'>
+                                                    <img src={profileImage} width={'80px'} height={'80px'} className='rounded-full hover:cursor-pointer' />
+                                                    <p className='text-center font-semibold text-black hover:cursor-pointer hover:opacity-60'>
+                                                        Akshay{user?.name}
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <TextLink text={'Upload Design Work'} styles={'font-normal py-3'} onclick={null} />
+                                                    <TextLink text={'Settings'} styles={'py-3'} onclick={null} />
+
+                                                    <TextLink text={'Sign Out'} styles={'py-4 border-t-2'} onclick={() => handleLogout} />
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                )
+                        }
                     </div>
 
                 </div>
@@ -100,13 +148,18 @@ export const Navbar = () => {
                                 </div>
                             </div>
 
-                            <div className="border-t mt-3 ">
-                                <TextLink onclick={()=>navigate('/login')} text={'Log in'} styles={'pt-6'} />
-                            </div>
+                            {
+                                isLoggedIn === false && 
+                                (
+                                    <div className="border-t mt-3 ">
+                                        <TextLink onclick={() => navigate('/login')} text={'Log in'} styles={'pt-6'} />
+                                    </div>
+                                )
+                            }
 
                         </div>
 
-                        
+
 
                     </div>
                 )

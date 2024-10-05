@@ -11,20 +11,6 @@
     │   ├── Json-Server
     │   │   └── db.json
     │   ├── README.md
-    │   ├── dist
-    │   │   ├── assets
-    │   │   │   ├── Mona-Sans-CxWibSko.ttf
-    │   │   │   ├── index-B3xD-OKH.css
-    │   │   │   ├── index-Da0c-02S.js
-    │   │   │   └── logo-eWEjui3M.svg
-    │   │   ├── data
-    │   │   │   ├── data-2.json
-    │   │   │   ├── designer-data.json
-    │   │   │   └── footer-data.json
-    │   │   ├── images
-    │   │   │   └── vite.svg
-    │   │   ├── index.html
-    │   │   └── sampleDb2.json
     │   ├── eslint.config.js
     │   ├── index.html
     │   ├── package.json
@@ -64,12 +50,16 @@
     │   │   │   ├── HorizontalScroll
     │   │   │   │   ├── DesignerCarousel.tsx
     │   │   │   │   └── Designers.tsx
+    │   │   │   ├── Profile
+    │   │   │   │   └── DesignTypesScroller.tsx
     │   │   │   └── auth
     │   │   │       └── AuthPages.tsx
     │   │   ├── components
     │   │   │   ├── auth
     │   │   │   │   ├── LoginForm.tsx
     │   │   │   │   └── SignupForm.tsx
+    │   │   │   ├── common
+    │   │   │   │   └── WrapperHoc.tsx
     │   │   │   └── home
     │   │   │       ├── ColoredHeading.tsx
     │   │   │       ├── Dropdown.tsx
@@ -85,6 +75,7 @@
     │   │   ├── main.tsx
     │   │   ├── pages
     │   │   │   ├── Home.tsx
+    │   │   │   ├── Profile.tsx
     │   │   │   ├── auth
     │   │   │   │   ├── Login.tsx
     │   │   │   │   └── Signup.tsx
