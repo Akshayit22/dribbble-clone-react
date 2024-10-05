@@ -8,17 +8,26 @@
 └── Tripit-clone
     ├── README.md
     ├── dribbble-clone
+    │   ├── Json-Server
+    │   │   └── db.json
     │   ├── README.md
     │   ├── eslint.config.js
     │   ├── index.html
     │   ├── package.json
     │   ├── postcss.config.js
     │   ├── public
-    │   │   └── vite.svg
+    │   │   ├── data
+    │   │   │   ├── data-2.json
+    │   │   │   ├── designer-data.json
+    │   │   │   └── footer-data.json
+    │   │   ├── images
+    │   │   │   └── vite.svg
+    │   │   └── sampleDb2.json
     │   ├── src
     │   │   ├── App.tsx
     │   │   ├── assets
     │   │   │   ├── Home
+    │   │   │   │   ├── logo-black.svg
     │   │   │   │   └── logo.svg
     │   │   │   └── react.svg
     │   │   ├── common
@@ -37,6 +46,7 @@
     │   │   │   ├── Home
     │   │   │   │   ├── Logo.tsx
     │   │   │   │   ├── TextLink.tsx
+    │   │   │   │   ├── UnderlineText.tsx
     │   │   │   │   └── designer-data.json
     │   │   │   ├── HorizontalScroll
     │   │   │   │   ├── DesignerCarousel.tsx
