@@ -3,16 +3,16 @@ import { FaAngleDown } from "react-icons/fa6";
 
 export const Dropdown = ({styles}:any) => {
     return (
-        <div className={`group relative cursor-pointer ${styles}`}>
+        <div className={`group relative  cursor-pointer ${styles}`}>
 
             <div className="flex items-center justify-between gap-1">
                 <TextLink text={"Find designers"} styles={"menu-hover"} />
                 <FaAngleDown />
             </div>
 
-            <div className="invisible absolute z-50 flex flex-col w-[16vw] bg-white rounded-2xl py-1 mt-5 text-gray-500 group-hover:visible">
+            <div className="opacity-0 absolute z-50 flex flex-col w-[16vw] bg-white rounded-2xl py-1 mt-3 text-gray-500 group-hover:opacity-100 transition-all duration-500">
 
-                <div className="p-5 space-y-4">
+                <div className="p-5 space-y-4 group-hover:visible">
                     <div>
                         <p className="text-base text-gray-600">Designer search</p>
                         <p className="text-sm">Quickly find your next designer</p>

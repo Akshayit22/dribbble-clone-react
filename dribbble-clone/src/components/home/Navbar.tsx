@@ -42,7 +42,8 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="hidden md:flex justify-center gap-56">
+                {/* Desktop view  */}
+                <div className="hidden md:flex justify-between">
                     <div className="flex items-center mr-2">
                         <nav className="flex ">
                             <Dropdown styles={'px-5 items-center'} />

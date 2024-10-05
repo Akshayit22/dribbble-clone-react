@@ -139,9 +139,9 @@ export const SignupForm = () => {
                                 />
                                 <span className="text-xs sm:text-sm text-gray-700">
                                     I agree with Dribbble's{' '}
-                                    <a href="#" className="text-black hover:underline">Terms of Service</a>,{' '}
-                                    <a href="#" className="text-black hover:underline">Privacy Policy</a>, and default{' '}
-                                    <a href="#" className="text-black hover:underline">Notification Settings</a>.
+                                    <a href="#" className="text-black underline">Terms of Service</a>,{' '}
+                                    <a href="#" className="text-black underline">Privacy Policy</a>, and default{' '}
+                                    <a href="#" className="text-black underline">Notification Settings</a>.
                                 </span>
                             </label>
                         </div>
