@@ -7,9 +7,9 @@ export const DesignerCarousel = () => {
         <div className="w-full overflow-hidden">
             <div className="flex gap-8 overflow-x-hidden py-16 w-full" style={{ width: `${data.length * 222}px` }}>
                 {data.map((designer, index) => (
-                    <div className="relative w-[280px] h-[350px] flex-shrink-0 animate-loop-scroll-hero overflow-hidden rounded-3xl">
+                    <div key={index} className="relative w-[280px] h-[350px] flex-shrink-0 animate-loop-scroll-hero overflow-hidden rounded-3xl">
 
-                        <Designers key={index} designer={designer} />
+                        <Designers  designer={designer} />
                     </div>
                 ))}
             </div>

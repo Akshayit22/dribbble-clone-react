@@ -1,3 +1,4 @@
+import Signup from "../../components/auth/Signup"
 
 export const Try = () => {
 
@@ -5,6 +6,7 @@ export const Try = () => {
         <div>
             Try
 
+            <Signup/>
 
             {/* 
             

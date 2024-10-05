@@ -1,3 +1,4 @@
+import { Logo } from '../Home/Logo';
 
 export const AuthPages = ({url,Component}:any) => {
 
@@ -12,9 +13,12 @@ export const AuthPages = ({url,Component}:any) => {
                     muted
                     playsInline
                 />
+                <div className="absolute top-10 left-10">
+                    <Logo/>
+                </div>
             </div>
 
-            <div className="h-full w-full md:w-[600px] flex justify-start items-center">
+            <div className="h-full w-full md:w-[600px] flex justify-start items-center shadow-lg shadow-white">
                 <Component/>
             </div>
 
