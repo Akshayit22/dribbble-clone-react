@@ -23,12 +23,14 @@ const getFooterDataApi = async () => {
 //     return axios.post(`${URL}/users`);
 // }
 
-export const getDesignersInfo = () => {
+export const useGetDesignersInfo = () => {
+    console.log('from useGetDesignersInfo');
     return useQuery({
 
         queryFn: async () => {
             try {
                 const data = await getDesignersInfoApi();
+                console.log(data);
                 return data.data;
             }
             catch (err) {
@@ -41,7 +43,7 @@ export const getDesignersInfo = () => {
     });
 };
 
-export const getDesignCards = () => {
+export const useGesignCards = () => {
     return useQuery({
 
         queryFn: async () => {
@@ -59,7 +61,7 @@ export const getDesignCards = () => {
     });
 };
 
-export const getFooterData = () => {
+export const useGFooterData = () => {
     return useQuery({
 
         queryFn: async () => {

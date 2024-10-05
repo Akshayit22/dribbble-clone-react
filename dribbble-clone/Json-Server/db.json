@@ -1,18 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Jone Doe",
       "username": "john_doe",
       "email": "john@example.com",
       "password": "password123"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Akshay Telang",
       "username": "akshay22@gmail.com",
       "email": "akshay22@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "4b45",
+      "name": "sample1",
+      "username": "sample2",
+      "email": "sample@gmail.com",
+      "password": "sample"
     }
   ]
 }

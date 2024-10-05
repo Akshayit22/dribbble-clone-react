@@ -11,18 +11,31 @@
     │   ├── Json-Server
     │   │   └── db.json
     │   ├── README.md
-    │   ├── eslint.config.js
-    │   ├── index.html
-    │   ├── package.json
-    │   ├── postcss.config.js
-    │   ├── public
+    │   ├── dist
+    │   │   ├── assets
+    │   │   │   ├── Mona-Sans-CxWibSko.ttf
+    │   │   │   ├── index-B3xD-OKH.css
+    │   │   │   ├── index-Da0c-02S.js
+    │   │   │   └── logo-eWEjui3M.svg
     │   │   ├── data
     │   │   │   ├── data-2.json
     │   │   │   ├── designer-data.json
     │   │   │   └── footer-data.json
     │   │   ├── images
     │   │   │   └── vite.svg
+    │   │   ├── index.html
     │   │   └── sampleDb2.json
+    │   ├── eslint.config.js
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── postcss.config.js
+    │   ├── public
+    │   │   ├── data
+    │   │   │   ├── design-cards.json
+    │   │   │   ├── designers-data.json
+    │   │   │   └── footer-data.json
+    │   │   └── images
+    │   │       └── vite.svg
     │   ├── src
     │   │   ├── App.tsx
     │   │   ├── assets
@@ -78,6 +91,13 @@
     │   │   │   └── common
     │   │   │       ├── Error.tsx
     │   │   │       └── Try.tsx
+    │   │   ├── services
+    │   │   │   ├── react-query
+    │   │   │   │   └── apis.ts
+    │   │   │   └── redux
+    │   │   │       ├── slices
+    │   │   │       │   └── AuthSlice.ts
+    │   │   │       └── store.ts
     │   │   └── vite-env.d.ts
     │   ├── tailwind.config.js
     │   ├── tsconfig.app.json

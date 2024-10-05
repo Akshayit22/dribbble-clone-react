@@ -1,15 +1,16 @@
 
 export const Try = () => {
 
-    // const [posts, setPosts] = useState([]);
+    // const [data, setData] = useState([]);
 
     // useEffect(() => {
     //     const fetchPosts = async () => {
     //         try {
-    //             const response = await axios.get('http://localhost:3001/posts');
-    //             setPosts(response.data);
+    //             const response = await axios.get('http://localhost:3000/users');
+    //             setData(response.data.data);
+    //             console.log(data);
     //         } catch (error) {
-    //             console.error('Error fetching posts:', error);
+    //             console.error('Error fetching Designer information:', error);
     //         }
     //     };
 
@@ -28,6 +29,8 @@ export const Try = () => {
     //     try {
     //         if (isLogin) {
     //             // Login
+    //              // http://localhost:3000/users?email=john@example.com&password=password123
+    //              // localhost:3000/users?email=akshay22@gmail.com&password=123456
     //             const response = await axios.get(`${url}?username=${username}&password=${password}`);
     //             if (response.data.length > 0) {
     //                 console.log('Login successful');

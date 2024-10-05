@@ -5,10 +5,10 @@ import DesignGrid from '../../common/Designs/DesignGrid'
 import { DesignerCarousel } from '../../common/HorizontalScroll/DesignerCarousel'
 import { ColoredHeading } from './ColoredHeading'
 
-
 export const HeroSection = () => {
 
     const navigate = useNavigate();
+
 
     return (
         <div className='flex flex-col items-center justify-center pt-16'>
@@ -20,7 +20,7 @@ export const HeroSection = () => {
                 <Button onclick={() => navigate('/signup') } styles={''} flag={false} Component={<></>} text={'Get started'} />
             </div>
 
-            <DesignerCarousel />
+            <DesignerCarousel/>
 
             <div className='flex flex-col justify-center items-center mt-20 gap-12'>
                 <p className='text-3xl md:text-5xl font-serif'>Explore inspiring designs</p>
