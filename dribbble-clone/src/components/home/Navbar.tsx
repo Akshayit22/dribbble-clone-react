@@ -24,7 +24,7 @@ export const Navbar = () => {
     const dispatch = useDispatch();
     const profileImage = 'https://cdn.dribbble.com/assets/avatar-default-5c629cb49eac40967b7fc4762c7232c2b5f2673acef772ae404c8b0d07b0d7fb.gif';
 
-    const handleLogout = () =>{
+    const handleLogout = () => {
         dispatch(logout());
         toast.success('user logged out successfully...');
         navigate('/');
@@ -51,7 +51,7 @@ export const Navbar = () => {
                         {
                             isLoggedIn ?
                                 (
-                                    <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' />
+                                    <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' onClick={() => navigate('/profile')} />
                                 ) :
                                 (
                                     <Button onclick={() => navigate('/signup')} styles={''} flag={false} Component={<></>} text={'Sign up'} />
@@ -88,11 +88,11 @@ export const Navbar = () => {
                                 ) :
                                 (
                                     <div className='group'>
-                                        <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' />
+                                        <img src={profileImage} width={'45px'} height={'45px'} className='rounded-full group hover:cursor-pointer' onClick={() => navigate('/profile')} />
 
                                         <div className='pt-7 w-80 rounded-xl border invisible opacity-0 absolute top-24 right-10 z-50 group-hover:opacity-100 group-hover:visible transition-all duration-500 bg-white'>
                                             <div className='p-8 '>
-                                                <div className='mb-5 flex flex-col justify-center items-center'>
+                                                <div className='mb-5 flex flex-col justify-center items-center' onClick={() => navigate('/dashboard')}>
                                                     <img src={profileImage} width={'80px'} height={'80px'} className='rounded-full hover:cursor-pointer' />
                                                     <p className='text-center font-semibold text-black hover:cursor-pointer hover:opacity-60'>
                                                         {user?.name}
@@ -102,7 +102,9 @@ export const Navbar = () => {
                                                     <TextLink text={'Upload Design Work'} styles={'font-normal py-3'} onclick={null} />
                                                     <TextLink text={'Settings'} styles={'py-3'} onclick={null} />
 
-                                                    <button onClick={() => handleLogout()} className='py-4 border-t-2 text-sm font-semibold hover:cursor-pointer hover:opacity-70 transition-opacity duration-150'>Sign Out</button>
+                                                    <div className='border-t-2'>
+                                                        <button onClick={() => handleLogout()} className='py-4  text-sm font-semibold hover:cursor-pointer hover:opacity-70 transition-opacity duration-150'>Sign Out</button>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -149,7 +151,7 @@ export const Navbar = () => {
                             </div>
 
                             {
-                                isLoggedIn === false && 
+                                isLoggedIn === false &&
                                 (
                                     <div className="border-t mt-3 ">
                                         <TextLink onclick={() => navigate('/login')} text={'Log in'} styles={'pt-6'} />

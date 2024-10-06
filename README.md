@@ -14,8 +14,8 @@
     │   ├── dist
     │   │   ├── assets
     │   │   │   ├── Mona-Sans-CxWibSko.ttf
-    │   │   │   ├── index-CTlayDKL.js
-    │   │   │   ├── index-DqmKxeyp.css
+    │   │   │   ├── index-Brko7V0h.js
+    │   │   │   ├── index-mt53avVy.css
     │   │   │   └── logo-eWEjui3M.svg
     │   │   ├── data
     │   │   │   ├── design-cards.json
@@ -39,6 +39,7 @@
     │   │   ├── App.tsx
     │   │   ├── assets
     │   │   │   ├── Home
+    │   │   │   │   ├── color-icon.svg
     │   │   │   │   ├── logo-black.svg
     │   │   │   │   └── logo.svg
     │   │   │   └── react.svg
@@ -68,6 +69,8 @@
     │   │   │   └── auth
     │   │   │       └── AuthPages.tsx
     │   │   ├── components
+    │   │   │   ├── Profile
+    │   │   │   │   └── DropdownMenu.tsx
     │   │   │   ├── auth
     │   │   │   │   ├── LoginForm.tsx
     │   │   │   │   └── SignupForm.tsx
@@ -87,6 +90,7 @@
     │   │   ├── index.css
     │   │   ├── main.tsx
     │   │   ├── pages
+    │   │   │   ├── Dashboard.tsx
     │   │   │   ├── Home.tsx
     │   │   │   ├── Profile.tsx
     │   │   │   ├── auth
