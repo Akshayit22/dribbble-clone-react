@@ -12,6 +12,7 @@ import { Button } from "../../common/Buttons/Button";
 import { TextLink } from "../../common/Home/TextLink";
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../services/redux/slices/AuthSlice';
+import { toast } from 'react-toastify';
 
 export const Navbar = () => {
 
@@ -19,14 +20,13 @@ export const Navbar = () => {
 
     const { user, isLoggedIn } = useSelector((state: any) => state);
 
-    console.log(user, isLoggedIn);
-
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const profileImage = 'https://cdn.dribbble.com/assets/avatar-default-5c629cb49eac40967b7fc4762c7232c2b5f2673acef772ae404c8b0d07b0d7fb.gif';
 
     const handleLogout = () =>{
         dispatch(logout());
+        toast.success('user logged out successfully...');
         navigate('/');
     }
 
@@ -95,14 +95,14 @@ export const Navbar = () => {
                                                 <div className='mb-5 flex flex-col justify-center items-center'>
                                                     <img src={profileImage} width={'80px'} height={'80px'} className='rounded-full hover:cursor-pointer' />
                                                     <p className='text-center font-semibold text-black hover:cursor-pointer hover:opacity-60'>
-                                                        Akshay{user?.name}
+                                                        {user?.name}
                                                     </p>
                                                 </div>
                                                 <div>
                                                     <TextLink text={'Upload Design Work'} styles={'font-normal py-3'} onclick={null} />
                                                     <TextLink text={'Settings'} styles={'py-3'} onclick={null} />
 
-                                                    <TextLink text={'Sign Out'} styles={'py-4 border-t-2'} onclick={() => handleLogout} />
+                                                    <button onClick={() => handleLogout()} className='py-4 border-t-2 text-sm font-semibold hover:cursor-pointer hover:opacity-70 transition-opacity duration-150'>Sign Out</button>
                                                 </div>
                                             </div>
 

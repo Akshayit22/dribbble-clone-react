@@ -11,6 +11,19 @@
     │   ├── Json-Server
     │   │   └── db.json
     │   ├── README.md
+    │   ├── dist
+    │   │   ├── assets
+    │   │   │   ├── Mona-Sans-CxWibSko.ttf
+    │   │   │   ├── index-CTlayDKL.js
+    │   │   │   ├── index-DqmKxeyp.css
+    │   │   │   └── logo-eWEjui3M.svg
+    │   │   ├── data
+    │   │   │   ├── design-cards.json
+    │   │   │   ├── designers-data.json
+    │   │   │   └── footer-data.json
+    │   │   ├── images
+    │   │   │   └── vite.svg
+    │   │   └── index.html
     │   ├── eslint.config.js
     │   ├── index.html
     │   ├── package.json

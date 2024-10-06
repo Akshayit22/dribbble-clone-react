@@ -5,6 +5,8 @@ import { FcGoogle } from 'react-icons/fc';
 import { useState } from 'react';
 import { UnderlineText } from '../../common/Home/UnderlineText';
 import { FaChevronLeft } from 'react-icons/fa';
+import { toast } from 'react-toastify';
+import axios from 'axios';
 
 export const SignupForm = () => {
 
@@ -27,10 +29,25 @@ export const SignupForm = () => {
         }));
     };
 
+    const sendData = async (data: any) => {
+        delete data.agreeToTerms;
+        try{
+            const resp = await axios.post('http://localhost:3000/users', data);
+            toast(`${resp.data.name} User Created Successfully.`);
+            navigate('/login');
+        }catch(error){
+            console.log(error);
+            toast.error('Something Went Wrong, Please Try again.');
+        }
+    }
+
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Add your form submission logic here
+        if (formData.agreeToTerms){
+            sendData(formData);
+        }else{
+            toast.error('Select Checkbox for Sign Up.');
+        }
     };
 
 
@@ -132,10 +149,10 @@ export const SignupForm = () => {
                                 <input
                                     type="checkbox"
                                     name="agreeToTerms"
-                                    checked={formData.agreeToTerms}
                                     onChange={handleInputChange}
+                                    checked={formData.agreeToTerms}
                                     className="mt-1 sm:mt-0 mr-2"
-                                    required
+                                    
                                 />
                                 <span className="text-xs sm:text-sm text-gray-700">
                                     I agree with Dribbble's{' '}

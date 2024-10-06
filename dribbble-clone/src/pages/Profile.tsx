@@ -3,10 +3,12 @@ import { Navbar } from "../components/home/Navbar"
 import { UnderlineText } from "../common/Home/UnderlineText";
 import DesignGrid from "../common/Designs/DesignGrid";
 import { Footer } from "../components/home/Footer";
+import { toast } from "react-toastify";
 
 export const Profile = () => {
 
     const { user } = useSelector((state: any) => state);
+    toast.success(`Welcome ${user.name}`);
 
     return (
         <div className="bg-white">

@@ -15,11 +15,18 @@
       "password": "123456"
     },
     {
-      "id": "4b45",
-      "name": "sample1",
-      "username": "sample2",
-      "email": "sample@gmail.com",
-      "password": "sample"
+      "id": "3ba1",
+      "name": "John Cena",
+      "username": "johnc@wwe.com",
+      "email": "johnc@wwe.com",
+      "password": "123456"
+    },
+    {
+      "id": "81e0",
+      "name": "Akshay",
+      "username": "ak@gmail.com",
+      "email": "ak@gmail.com",
+      "password": "1234567"
     }
   ]
 }

@@ -3,9 +3,15 @@ import { WhiteButton } from "../../common/Buttons/WhiteButton"
 import { Button } from "../../common/Buttons/Button";
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { login } from "../../services/redux/slices/AuthSlice";
 
 export const LoginForm = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const url = 'http://localhost:3000/users';
 
     const [formData, setFormData] = useState({
         email: '',
@@ -20,10 +26,26 @@ export const LoginForm = () => {
         }));
     };
 
+    const sendData = async(data:any) =>{
+
+        const response = await axios.get(`${url}?email=${data.email}&password=${data.password}`);
+        
+        if (response.data.length > 0) {
+            console.log('Login successful');
+            const user = response.data[0];
+            dispatch(login(user));
+            localStorage.setItem('user',user);
+            toast.success('login sucess.');
+            navigate('/profile');
+        } else {
+            console.log('Invalid credentials');
+            toast.error('Invalid credentials');
+        }
+    }
+
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Add your form submission logic here
+        sendData(formData);
     };
 
     return (

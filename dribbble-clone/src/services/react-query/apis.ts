@@ -15,13 +15,6 @@ const getFooterDataApi = async () => {
     return axios.get(`${URL}/footer-data.json`);
 };
 
-// const getUserInfoApi = async() =>{
-//     return axios.get(`${URL}/users`);
-// }
-
-// const postUserInfoApi = async () => {
-//     return axios.post(`${URL}/users`);
-// }
 
 export const useGetDesignersInfo = () => {
     console.log('from useGetDesignersInfo');
