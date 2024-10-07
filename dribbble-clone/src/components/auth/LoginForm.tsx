@@ -31,10 +31,9 @@ export const LoginForm = () => {
         const response = await axios.get(`${url}?email=${data.email}&password=${data.password}`);
         
         if (response.data.length > 0) {
-            console.log('Login successful');
             const user = response.data[0];
             dispatch(login(user));
-            localStorage.setItem('user',user);
+            localStorage.setItem('user', JSON.stringify(user));
             toast.success('login sucess.');
             navigate('/profile');
         } else {

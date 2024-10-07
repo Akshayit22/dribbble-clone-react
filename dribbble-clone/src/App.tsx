@@ -8,6 +8,8 @@ import { Signup } from "./pages/auth/Signup";
 import { Try } from "./pages/common/Try";
 import { Profile } from "./pages/Profile";
 import { Dashboard } from './pages/Dashboard';
+import PrivateRoute from './common/auth/PrivateRoute';
+import { OpenRoute } from './common/auth/OpenRoute';
 
 function App() {
 
@@ -15,10 +17,10 @@ function App() {
         <div >
             <Routes>
                 <Route path="/" index element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<Signup />} />
-                <Route path="/profile" element={<Profile />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/login" element={<OpenRoute><Login /></OpenRoute>} />
+                <Route path="/signup" element={<OpenRoute><Signup /></OpenRoute>} />
+                <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+                <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
                 <Route path="/try" element={<Try />} />
                 <Route path="*" element={<Error />} />
             </Routes>

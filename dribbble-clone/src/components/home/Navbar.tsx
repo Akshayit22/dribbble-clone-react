@@ -42,7 +42,9 @@ export const Navbar = () => {
                                 : <RxCross2 className="text-4xl hover:cursor-pointer" onClick={() => setToggle(!toggle)} />
                         }
 
-                        <Logo />
+                        <div onClick={()=>navigate('/')}>
+                            <Logo />
+                        </div>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -71,7 +73,7 @@ export const Navbar = () => {
                         </nav>
                     </div>
 
-                    <div className="flex items-center">
+                    <div className="flex items-center" onClick={() => navigate('/')}>
                         <Logo />
 
                     </div>

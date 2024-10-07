@@ -4,6 +4,7 @@ import { Navbar } from "../components/home/Navbar"
 
 
 export const Home = () => {
+    console.log(JSON.parse(localStorage.getItem('user')??"null"))
     return (
         <div className="w-full">
             <Navbar />

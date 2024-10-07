@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import { Logo } from '../Home/Logo';
 
 export const AuthPages = ({url,Component}:any) => {
+
+    const navigate = useNavigate();
 
     return (
         <div className="flex h-screen bg-white">
@@ -13,7 +16,7 @@ export const AuthPages = ({url,Component}:any) => {
                     muted
                     playsInline
                 />
-                <div className="absolute top-10 left-10">
+                <div className="absolute top-10 left-10" onClick={() => navigate('/')}>
                     <Logo/>
                 </div>
             </div>
