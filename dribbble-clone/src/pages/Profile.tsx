@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { Navbar } from "../components/home/Navbar"
 import { UnderlineText } from "../common/Home/UnderlineText";
-import DesignGrid from "../common/Designs/DesignGrid";
 import { Footer } from "../components/home/Footer";
 import { toast } from "react-toastify";
 import { LuListFilter } from "react-icons/lu";
@@ -9,6 +8,7 @@ import DropdownMenu from "../components/Profile/DropdownMenu";
 import { useEffect, useState } from "react";
 import { HiSearch } from 'react-icons/hi';
 import color from '../assets/Home/color-icon.svg'
+import ExploreDesigns from "../components/home/HeroSectionComp/ExploreDesigns";
 export const Profile = () => {
 
     const { user } = useSelector((state: any) => state);
@@ -66,7 +66,7 @@ export const Profile = () => {
             </div>
 
             <div className="mx-2">
-                <DesignGrid />
+                <ExploreDesigns />
             </div>
 
             <div className="flex justify-center m-3">

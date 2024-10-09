@@ -1,8 +1,9 @@
+import WrapperHoc from "../../components/common/WrapperHoc";
 import { Designers } from "./Designers";
-import data from '../../assets/data/designer-data.json';
+// import data from '../../assets/data/designer-data.json';
 
 
-export const DesignerCarousel = () => {
+const _DesignerCarousel = ({data}:any) => {
 
     return (
         <div className="w-full overflow-hidden">
@@ -26,3 +27,5 @@ export const DesignerCarousel = () => {
         </div>
     );
 };
+
+export const DesignerCarousel = WrapperHoc(_DesignerCarousel);

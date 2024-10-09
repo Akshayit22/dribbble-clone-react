@@ -13,14 +13,28 @@
     │   ├── README.md
     │   ├── dist
     │   │   ├── assets
+    │   │   │   ├── Button-B66i7Gs-.js
+    │   │   │   ├── Dashboard-CI2Ulhq9.js
+    │   │   │   ├── Error-DU6c-VuS.js
+    │   │   │   ├── ExploreDesigns-BZGRYQPm.js
+    │   │   │   ├── Home-DcI6Eg1f.js
+    │   │   │   ├── Loader-BWYVVz4I.js
+    │   │   │   ├── Login-C8MJn-2I.js
     │   │   │   ├── Mona-Sans-CxWibSko.ttf
-    │   │   │   ├── index-Brko7V0h.js
-    │   │   │   ├── index-mt53avVy.css
+    │   │   │   ├── Navbar-Cmg5bwUS.js
+    │   │   │   ├── Navbar-DsLgmgZ5.css
+    │   │   │   ├── OpenRoute-DoPaK5a2.js
+    │   │   │   ├── PrivateRoute-t9qLjjDq.js
+    │   │   │   ├── Profile-DTeWDcHD.js
+    │   │   │   ├── Signup-BTafiTim.js
+    │   │   │   ├── Try-CD9YaJfh.js
+    │   │   │   ├── UnderlineText-PTFHy-Bh.js
+    │   │   │   ├── WhiteButton-BaJwySWR.js
+    │   │   │   ├── index-Bi8zl65B.js
+    │   │   │   ├── index-_phLNkbs.css
+    │   │   │   ├── index-ik6_yn-K.js
+    │   │   │   ├── index-rNZ9U3d_.js
     │   │   │   └── logo-eWEjui3M.svg
-    │   │   ├── data
-    │   │   │   ├── design-cards.json
-    │   │   │   ├── designers-data.json
-    │   │   │   └── footer-data.json
     │   │   ├── images
     │   │   │   └── vite.svg
     │   │   └── index.html
@@ -29,10 +43,6 @@
     │   ├── package.json
     │   ├── postcss.config.js
     │   ├── public
-    │   │   ├── data
-    │   │   │   ├── design-cards.json
-    │   │   │   ├── designers-data.json
-    │   │   │   └── footer-data.json
     │   │   └── images
     │   │       └── vite.svg
     │   ├── src
@@ -42,6 +52,10 @@
     │   │   │   │   ├── color-icon.svg
     │   │   │   │   ├── logo-black.svg
     │   │   │   │   └── logo.svg
+    │   │   │   ├── data
+    │   │   │   │   ├── design-cards-data.json
+    │   │   │   │   ├── designer-data.json
+    │   │   │   │   └── footer-data.json
     │   │   │   └── react.svg
     │   │   ├── common
     │   │   │   ├── Buttons
@@ -49,25 +63,25 @@
     │   │   │   │   └── WhiteButton.tsx
     │   │   │   ├── Designs
     │   │   │   │   ├── DesignCard.tsx
-    │   │   │   │   ├── DesignGrid.tsx
-    │   │   │   │   └── data-2.json
+    │   │   │   │   └── DesignGrid.tsx
     │   │   │   ├── Footer
     │   │   │   │   ├── FooterLink.tsx
     │   │   │   │   ├── FooterScrollCard.tsx
-    │   │   │   │   ├── InfiniteScrollCards.tsx
-    │   │   │   │   └── footer-data.json
+    │   │   │   │   └── InfiniteScrollCards.tsx
     │   │   │   ├── Home
+    │   │   │   │   ├── Loader.tsx
     │   │   │   │   ├── Logo.tsx
     │   │   │   │   ├── TextLink.tsx
-    │   │   │   │   ├── UnderlineText.tsx
-    │   │   │   │   └── designer-data.json
+    │   │   │   │   └── UnderlineText.tsx
     │   │   │   ├── HorizontalScroll
     │   │   │   │   ├── DesignerCarousel.tsx
     │   │   │   │   └── Designers.tsx
     │   │   │   ├── Profile
     │   │   │   │   └── DesignTypesScroller.tsx
     │   │   │   └── auth
-    │   │   │       └── AuthPages.tsx
+    │   │   │       ├── AuthPages.tsx
+    │   │   │       ├── OpenRoute.tsx
+    │   │   │       └── PrivateRoute.tsx
     │   │   ├── components
     │   │   │   ├── Profile
     │   │   │   │   └── DropdownMenu.tsx
@@ -81,6 +95,9 @@
     │   │   │       ├── Dropdown.tsx
     │   │   │       ├── Footer.tsx
     │   │   │       ├── HeroSection.tsx
+    │   │   │       ├── HeroSectionComp
+    │   │   │       │   ├── Designers.tsx
+    │   │   │       │   └── ExploreDesigns.tsx
     │   │   │       ├── Navbar.tsx
     │   │   │       └── SearchBar.tsx
     │   │   ├── fonts
@@ -98,6 +115,7 @@
     │   │   │   │   └── Signup.tsx
     │   │   │   └── common
     │   │   │       ├── Error.tsx
+    │   │   │       ├── ErrorBoundary.tsx
     │   │   │       └── Try.tsx
     │   │   ├── services
     │   │   │   ├── react-query

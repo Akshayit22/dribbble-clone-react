@@ -1,15 +1,19 @@
 import { FooterLink } from "../../common/Footer/FooterLink";
-import InfiniteScrollCards from "../../common/Footer/InfiniteScrollCards"
+import { InfiniteScrollCards } from "../../common/Footer/InfiniteScrollCards"
 import { Logo } from "../../common/Home/Logo"
 import { FaInstagram, FaFacebookSquare, FaPinterest, FaTwitter } from "react-icons/fa";
+import { useGetFooterData } from "../../services/react-query/apis";
 
 
 export const Footer = () => {
+
+    const { data, isLoading, isError } = useGetFooterData();
+
     return (
         <div>
             <div className="pt-16 bg-white">
 
-                <InfiniteScrollCards />
+                <InfiniteScrollCards data={data} isLoading={isLoading} isError={isError} />
 
                 <div className="md:mx-32 px-8">
 

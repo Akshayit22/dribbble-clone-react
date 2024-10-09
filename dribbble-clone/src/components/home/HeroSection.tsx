@@ -1,14 +1,14 @@
 import { useNavigate } from 'react-router-dom'
 import { Button } from '../../common/Buttons/Button'
 import { WhiteButton } from '../../common/Buttons/WhiteButton'
-import DesignGrid from '../../common/Designs/DesignGrid'
-import { DesignerCarousel } from '../../common/HorizontalScroll/DesignerCarousel'
 import { ColoredHeading } from './ColoredHeading'
+import Designers from './HeroSectionComp/Designers'
+import ExploreDesigns from './HeroSectionComp/ExploreDesigns'
 
 export const HeroSection = () => {
 
     const navigate = useNavigate();
-
+   
 
     return (
         <div className='flex flex-col items-center justify-center pt-16'>
@@ -17,14 +17,16 @@ export const HeroSection = () => {
                 <ColoredHeading />
                 <p className='mx-16 text-3xl md:text-7xl text-center font-serif'>The world{'’'}s destination for design</p>
                 <p className='md:text-xl font-semibold mx-5 text-center'>Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
-                <Button onclick={() => navigate('/signup') } styles={''} flag={false} Component={<></>} text={'Get started'} />
+                <Button onclick={() => navigate('/signup')} styles={''} flag={false} Component={<></>} text={'Get started'} />
             </div>
 
-            <DesignerCarousel/>
+            <Designers/>
+            {/* <DesignerCarousel /> */}
 
             <div className='flex flex-col justify-center items-center mt-20 gap-12'>
                 <p className='text-3xl md:text-5xl font-serif'>Explore inspiring designs</p>
-                <DesignGrid />
+                <ExploreDesigns/>
+                {/* <DesignGrid /> */}
                 <WhiteButton onClick={() => console.log('bt')} styles={'border-1 border-black w-fit'} flag={false} Component={<></>} text={'Browse more inspiration'} />
             </div>
 
@@ -39,7 +41,7 @@ export const HeroSection = () => {
                         <Button onClick={() => console.log('bt')} styles={''} flag={false} Component={<></>} text={'Get started now'} />
                         <WhiteButton onClick={() => console.log('bt')} styles={'border-0 font-medium'} flag={false} Component={<></>} text={'Learn about hiring'} />
                     </div>
-                    
+
                     <p className='text-xl m-4 font-s text-center'>Are you a designer? <span className='hover:cursor-pointer underline'>Join Dribbble</span></p>
                 </div>
             </div>

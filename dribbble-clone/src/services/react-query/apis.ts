@@ -1,29 +1,27 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-const URL = 'http://localhost:3000/data'
+const URL:string = 'http://localhost:3000';
 
 const getDesignersInfoApi = async () => {
-    return axios.get(`${URL}/designers-data.json`);
+    return axios.get(`${URL}/designers-info`);
 };
 
 const getDesignCardsApi = async () => {
-    return axios.get(`${URL}/design-cards.json`);
+    return axios.get(`${URL}/design-cards-data`);
 };
 
 const getFooterDataApi = async () => {
-    return axios.get(`${URL}/footer-data.json`);
+    return axios.get(`${URL}/footer-cards-data`);
 };
 
 
 export const useGetDesignersInfo = () => {
-    console.log('from useGetDesignersInfo');
     return useQuery({
 
         queryFn: async () => {
             try {
                 const data = await getDesignersInfoApi();
-                console.log(data);
                 return data.data;
             }
             catch (err) {
@@ -36,7 +34,7 @@ export const useGetDesignersInfo = () => {
     });
 };
 
-export const useGesignCards = () => {
+export const useGetDesignCards = () => {
     return useQuery({
 
         queryFn: async () => {
@@ -54,7 +52,7 @@ export const useGesignCards = () => {
     });
 };
 
-export const useGFooterData = () => {
+export const useGetFooterData = () => {
     return useQuery({
 
         queryFn: async () => {

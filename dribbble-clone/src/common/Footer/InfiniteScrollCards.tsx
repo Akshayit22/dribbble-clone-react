@@ -1,7 +1,8 @@
-import data from '../../assets/data/footer-data.json';
+// import data from '../../assets/data/footer-data.json';
+import WrapperHoc from '../../components/common/WrapperHoc';
 import { FooterScrollCard } from './FooterScrollCard';
 
-const InfiniteScrollCards = () => {
+const _InfiniteScrollCards = ({data}:any) => {
 
     return (
         <div className="relative w-full overflow-hidden " >
@@ -20,4 +21,4 @@ const InfiniteScrollCards = () => {
     );
 };
 
-export default InfiniteScrollCards;
+export const InfiniteScrollCards = WrapperHoc(_InfiniteScrollCards);

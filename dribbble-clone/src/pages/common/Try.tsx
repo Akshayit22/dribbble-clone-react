@@ -8,7 +8,7 @@ export const Try = () => {
     return (
         <div>
             {/* <DropdownMenu/> */}
-            Try
+            
             {/* <Loader/> */}
             {/* 
             
