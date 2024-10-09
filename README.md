@@ -47,6 +47,8 @@
     │   │       └── vite.svg
     │   ├── src
     │   │   ├── App.tsx
+    │   │   ├── Types
+    │   │   │   └── common.ts
     │   │   ├── assets
     │   │   │   ├── Home
     │   │   │   │   ├── color-icon.svg
@@ -119,6 +121,7 @@
     │   │   │       └── Try.tsx
     │   │   ├── services
     │   │   │   ├── react-query
+    │   │   │   │   ├── api-url.ts
     │   │   │   │   └── apis.ts
     │   │   │   └── redux
     │   │   │       ├── slices

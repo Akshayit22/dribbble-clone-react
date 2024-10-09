@@ -1,17 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface User {
-    id?: number;
-    name?: string;
-    username?:string,
-    email:string,
-    password:string,
-}
-
-interface AuthState {
-    user: User | null;
-    isLoggedIn: boolean;
-}
+import { User, AuthState } from '../../../Types/common';
 
 const initialState: AuthState = {
     user: JSON.parse(localStorage.getItem('user') ?? "null"),

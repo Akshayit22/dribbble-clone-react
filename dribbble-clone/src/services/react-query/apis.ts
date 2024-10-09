@@ -1,18 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import { API_BASE_URL } from "./api-url";
 
-const URL:string = 'http://localhost:3000';
 
 const getDesignersInfoApi = async () => {
-    return axios.get(`${URL}/designers-info`);
+    return axios.get(`${API_BASE_URL}/designers-info`);
 };
 
 const getDesignCardsApi = async () => {
-    return axios.get(`${URL}/design-cards-data`);
+    return axios.get(`${API_BASE_URL}/design-cards-data`);
 };
 
 const getFooterDataApi = async () => {
-    return axios.get(`${URL}/footer-cards-data`);
+    return axios.get(`${API_BASE_URL}/footer-cards-data`);
 };
 
 
