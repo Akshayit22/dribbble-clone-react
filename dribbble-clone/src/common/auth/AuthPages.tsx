@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { Logo } from '../Home/Logo';
+import ErrorBoundary from '../../pages/common/ErrorBoundary';
 
-export const AuthPages = ({url,Component}:any) => {
+export const AuthPages = ({ url, Component }: any) => {
 
     const navigate = useNavigate();
 
@@ -17,12 +18,14 @@ export const AuthPages = ({url,Component}:any) => {
                     playsInline
                 />
                 <div className="absolute top-10 left-10" onClick={() => navigate('/')}>
-                    <Logo/>
+                    <Logo />
                 </div>
             </div>
 
             <div className="h-full w-full md:w-[600px] flex justify-start items-center shadow-lg shadow-white">
-                <Component/>
+                <ErrorBoundary>
+                    <Component />
+                </ErrorBoundary>
             </div>
 
         </div>

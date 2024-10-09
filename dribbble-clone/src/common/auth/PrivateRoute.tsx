@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 
 
-const PrivateRoute = ({ children }: any) => {
+export const PrivateRoute = ({ children }: any) => {
 
     const { isLoggedIn } = useSelector((state: any) => state);
     const navigate = useNavigate();
@@ -20,5 +20,3 @@ const PrivateRoute = ({ children }: any) => {
     );
 
 }
-
-export default PrivateRoute;

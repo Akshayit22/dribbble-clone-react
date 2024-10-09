@@ -1,9 +1,10 @@
+import { Loader } from "../../common/Home/Loader";
 
 export const WrapperHoc = (Component: any) => {
 
     return (props: any) => {
         if (props.isLoading)
-            return <div className="flex text-2xl h-screen justify-center items-center dark:text-white">"Loading..."</div>;
+            return <Loader/>;
 
         if (props.isError)
             return (

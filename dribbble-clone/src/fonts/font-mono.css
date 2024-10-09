@@ -1,6 +1,6 @@
 @font-face {
   font-family: "mono";
-  src: url("../fonts/Mona-Sans.ttf") format("truetype");
+  src: url("./Mona-Sans.ttf") format("truetype");
 }
 
 body {

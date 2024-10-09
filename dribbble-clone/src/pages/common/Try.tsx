@@ -1,5 +1,7 @@
 // import DropdownMenu from "../../components/Profile/DropdownMenu"
 
+// import { Loader } from "../../common/Home/Loader"
+
 export const Try = () => {
 
 
@@ -7,6 +9,7 @@ export const Try = () => {
         <div>
             {/* <DropdownMenu/> */}
             Try
+            {/* <Loader/> */}
             {/* 
             
             <p className="">Lorem ipsum dolor sit amet consectetu</p> 
