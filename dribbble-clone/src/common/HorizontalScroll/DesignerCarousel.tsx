@@ -1,5 +1,5 @@
 import { Designers } from "./Designers";
-import data from '../Home/designer-data.json';
+import data from '../../assets/data/designer-data.json';
 
 
 export const DesignerCarousel = () => {

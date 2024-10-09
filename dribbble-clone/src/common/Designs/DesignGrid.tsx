@@ -1,4 +1,4 @@
-import designsData from './data-2.json';
+import designsData from '../../assets/data/design-cards-data.json';
 import { DesignCard } from './DesignCard';
 
 const DesignGrid = () => {

@@ -1,4 +1,4 @@
-import data from './footer-data.json';
+import data from '../../assets/data/footer-data.json';
 import { FooterScrollCard } from './FooterScrollCard';
 
 const InfiniteScrollCards = () => {
