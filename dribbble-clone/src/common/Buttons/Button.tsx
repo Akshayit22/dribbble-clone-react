@@ -1,4 +1,4 @@
-import '../../index.css'
+import '../../index.css';
 
 export const Button = ({onclick, text, Component, flag, styles}:any) => {
   return (
