@@ -5,7 +5,6 @@ import ErrorBoundary from "./common/ErrorBoundary"
 
 
 export const Home = () => {
-    console.log(JSON.parse(localStorage.getItem('user') ?? "null"))
     return (
         <div className="w-full">
             <ErrorBoundary>

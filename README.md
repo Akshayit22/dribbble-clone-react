@@ -13,33 +13,35 @@
     │   ├── README.md
     │   ├── dist
     │   │   ├── assets
-    │   │   │   ├── Button-B66i7Gs-.js
-    │   │   │   ├── Dashboard-CI2Ulhq9.js
-    │   │   │   ├── Error-DU6c-VuS.js
-    │   │   │   ├── ExploreDesigns-BZGRYQPm.js
-    │   │   │   ├── Home-DcI6Eg1f.js
-    │   │   │   ├── Loader-BWYVVz4I.js
-    │   │   │   ├── Login-C8MJn-2I.js
+    │   │   │   ├── Button-DP3KAdcV.js
+    │   │   │   ├── Dashboard-BptVGdl8.js
+    │   │   │   ├── Error-fRWG5YNg.js
+    │   │   │   ├── ExploreDesigns-DDQWS2Zm.js
+    │   │   │   ├── Home-DMTUQ27r.js
+    │   │   │   ├── Loader-D3-Dk19m.js
+    │   │   │   ├── Login-HPlb68Rm.js
     │   │   │   ├── Mona-Sans-CxWibSko.ttf
-    │   │   │   ├── Navbar-Cmg5bwUS.js
+    │   │   │   ├── Navbar-CVYLvM_Q.js
     │   │   │   ├── Navbar-DsLgmgZ5.css
-    │   │   │   ├── OpenRoute-DoPaK5a2.js
-    │   │   │   ├── PrivateRoute-t9qLjjDq.js
-    │   │   │   ├── Profile-DTeWDcHD.js
-    │   │   │   ├── Signup-BTafiTim.js
-    │   │   │   ├── Try-CD9YaJfh.js
-    │   │   │   ├── UnderlineText-PTFHy-Bh.js
-    │   │   │   ├── WhiteButton-BaJwySWR.js
-    │   │   │   ├── index-Bi8zl65B.js
+    │   │   │   ├── OpenRoute-MtB1c2lk.js
+    │   │   │   ├── PrivateRoute-DX1ehYju.js
+    │   │   │   ├── Profile-CYLgQVwj.js
+    │   │   │   ├── Signup-D6Fed_mF.js
+    │   │   │   ├── Try-eF6xX8KE.js
+    │   │   │   ├── UnderlineText-Bdtvnf9h.js
+    │   │   │   ├── WhiteButton-CPXUd39-.js
+    │   │   │   ├── index-Ci0ggmOj.js
     │   │   │   ├── index-_phLNkbs.css
-    │   │   │   ├── index-ik6_yn-K.js
-    │   │   │   ├── index-rNZ9U3d_.js
+    │   │   │   ├── index-cwotrzEN.js
+    │   │   │   ├── index-tWfLRCcP.js
     │   │   │   └── logo-eWEjui3M.svg
     │   │   ├── images
     │   │   │   └── vite.svg
     │   │   └── index.html
     │   ├── eslint.config.js
     │   ├── index.html
+    │   ├── jest.config.js
+    │   ├── jest.setup.ts
     │   ├── package.json
     │   ├── postcss.config.js
     │   ├── public
@@ -49,6 +51,16 @@
     │   │   ├── App.tsx
     │   │   ├── Types
     │   │   │   └── common.ts
+    │   │   ├── __tests__
+    │   │   │   ├── common
+    │   │   │   │   ├── Buttons
+    │   │   │   │   │   └── Button.test.tsx
+    │   │   │   │   ├── HorizontalScroll
+    │   │   │   │   │   └── Designers.test.tsx
+    │   │   │   │   └── auth
+    │   │   │   │       └── Authpages.test.tsx
+    │   │   │   └── sample
+    │   │   │       └── Users.test.tsx
     │   │   ├── assets
     │   │   │   ├── Home
     │   │   │   │   ├── color-icon.svg
@@ -118,7 +130,8 @@
     │   │   │   └── common
     │   │   │       ├── Error.tsx
     │   │   │       ├── ErrorBoundary.tsx
-    │   │   │       └── Try.tsx
+    │   │   │       ├── Try.tsx
+    │   │   │       └── Users.tsx
     │   │   ├── services
     │   │   │   ├── react-query
     │   │   │   │   ├── api-url.ts

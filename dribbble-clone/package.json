@@ -8,7 +8,7 @@
     "server": "json-server ./Json-Server/db.json",
     "dev": "concurrently -n \"Server,Client\" -c \"bgBlue,bgYellow\" \"npm run server\" \"vite --host\"",
     "build": "tsc -b && vite build",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint .",
     "preview": "vite preview"
   },
