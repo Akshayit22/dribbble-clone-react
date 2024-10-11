@@ -11,6 +11,82 @@
     │   ├── Json-Server
     │   │   └── db.json
     │   ├── README.md
+    │   ├── coverage
+    │   │   ├── clover.xml
+    │   │   ├── coverage-final.json
+    │   │   ├── lcov-report
+    │   │   │   ├── AuthSlice.ts.html
+    │   │   │   ├── base.css
+    │   │   │   ├── block-navigation.js
+    │   │   │   ├── common
+    │   │   │   │   ├── Buttons
+    │   │   │   │   │   ├── Button.tsx.html
+    │   │   │   │   │   ├── WhiteButton.tsx.html
+    │   │   │   │   │   └── index.html
+    │   │   │   │   ├── HorizontalScroll
+    │   │   │   │   │   ├── Designers.tsx.html
+    │   │   │   │   │   └── index.html
+    │   │   │   │   └── auth
+    │   │   │   │       ├── AuthPages.tsx.html
+    │   │   │   │       └── index.html
+    │   │   │   ├── favicon.png
+    │   │   │   ├── index.html
+    │   │   │   ├── pages
+    │   │   │   │   └── common
+    │   │   │   │       ├── ErrorBoundary.tsx.html
+    │   │   │   │       ├── Users.tsx.html
+    │   │   │   │       └── index.html
+    │   │   │   ├── prettify.css
+    │   │   │   ├── prettify.js
+    │   │   │   ├── services
+    │   │   │   │   └── redux
+    │   │   │   │       └── slices
+    │   │   │   │           ├── AuthSlice.ts.html
+    │   │   │   │           └── index.html
+    │   │   │   ├── sort-arrow-sprite.png
+    │   │   │   ├── sorter.js
+    │   │   │   └── src
+    │   │   │       ├── App.tsx.html
+    │   │   │       ├── common
+    │   │   │       │   ├── Buttons
+    │   │   │       │   │   ├── Button.tsx.html
+    │   │   │       │   │   ├── WhiteButton.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   ├── Footer
+    │   │   │       │   │   ├── FooterLink.tsx.html
+    │   │   │       │   │   ├── FooterScrollCard.tsx.html
+    │   │   │       │   │   ├── InfiniteScrollCards.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   ├── Home
+    │   │   │       │   │   ├── Loader.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   ├── HorizontalScroll
+    │   │   │       │   │   ├── Designers.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   └── auth
+    │   │   │       │       ├── AuthPages.tsx.html
+    │   │   │       │       └── index.html
+    │   │   │       ├── components
+    │   │   │       │   ├── common
+    │   │   │       │   │   ├── WrapperHoc.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   └── home
+    │   │   │       │       ├── Footer.tsx.html
+    │   │   │       │       └── index.html
+    │   │   │       ├── index.html
+    │   │   │       ├── pages
+    │   │   │       │   ├── Home.tsx.html
+    │   │   │       │   ├── common
+    │   │   │       │   │   ├── ErrorBoundary.tsx.html
+    │   │   │       │   │   ├── Users.tsx.html
+    │   │   │       │   │   └── index.html
+    │   │   │       │   └── index.html
+    │   │   │       └── services
+    │   │   │           └── redux
+    │   │   │               └── slices
+    │   │   │                   ├── AuthSlice.ts.html
+    │   │   │                   └── index.html
+    │   │   └── lcov.info
     │   ├── dist
     │   │   ├── assets
     │   │   │   ├── Button-DP3KAdcV.js
@@ -59,7 +135,16 @@
     │   │   │   │   │   └── Designers.test.tsx
     │   │   │   │   └── auth
     │   │   │   │       └── Authpages.test.tsx
+    │   │   │   ├── components
+    │   │   │   │   ├── auth-forms
+    │   │   │   │   │   ├── LoginForm.test.tsx
+    │   │   │   │   │   └── SignupForm.test.tsx
+    │   │   │   │   └── home
+    │   │   │   ├── react query
+    │   │   │   ├── redux
+    │   │   │   │   └── AuthSlice.test.ts
     │   │   │   └── sample
+    │   │   │       ├── App.test.tsx
     │   │   │       └── Users.test.tsx
     │   │   ├── assets
     │   │   │   ├── Home

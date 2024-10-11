@@ -27,7 +27,7 @@ describe('AuthPages Component', () => {
         expect(videoElement).toBeInTheDocument();
         expect(videoElement).toHaveAttribute('src', mockUrl);
 
-        console.log(videoElement?.getAttribute('src'));
+        //console.log(videoElement?.getAttribute('src'));
         // screen.debug();
     });
 

@@ -64,6 +64,7 @@ export const LoginForm = () => {
                     <input type="email"
                         id="email"
                         name="email"
+                        data-testid="email-input"
                         value={formData.email}
                         onChange={handleInputChange}
                         className="px-5 py-4 w-full border rounded-lg text-md"
@@ -80,6 +81,7 @@ export const LoginForm = () => {
                         type="password"
                         id="password"
                         name="password"
+                        data-testid="password-input"
                         value={formData.password}
                         onChange={handleInputChange}
                         className="px-5 py-4 w-full border rounded-lg text-md"
@@ -88,8 +90,8 @@ export const LoginForm = () => {
                         required
                     />
                 </div>
-                <div className="mt-8 w-full">
-                    <Button onClick={null} type="submit" styles={'w-full'} flag={false} Component={<></>} text={'Sign In'} />
+                <div className="mt-8 w-full" data-testid="login-button">
+                    <Button onClick={null} data-testid="login-button" type="submit" styles={'w-full'} flag={false} Component={<></>} text={'Sign In'} />
                 </div>
             </form>
 

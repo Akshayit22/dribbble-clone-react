@@ -99,6 +99,7 @@ export const SignupForm = () => {
                                     type="text"
                                     id="name"
                                     name="name"
+                                    data-testid="name-input"
                                     value={formData.name}
                                     onChange={handleInputChange}
                                     className="px-5 py-4 w-full border rounded-lg text-md"
@@ -111,6 +112,7 @@ export const SignupForm = () => {
                                     type="text"
                                     id="username"
                                     name="username"
+                                    data-testid="username-input"
                                     value={formData.username}
                                     onChange={handleInputChange}
                                     className="px-5 py-4 w-full border rounded-lg text-md"
@@ -124,6 +126,7 @@ export const SignupForm = () => {
                                 type="email"
                                 id="email"
                                 name="email"
+                                data-testid="email-input"
                                 value={formData.email}
                                 onChange={handleInputChange}
                                 className="px-5 py-4 w-full border rounded-lg text-md"
@@ -136,6 +139,7 @@ export const SignupForm = () => {
                                 type="password"
                                 id="password"
                                 name="password"
+                                data-testid="password-input"
                                 value={formData.password}
                                 onChange={handleInputChange}
                                 className="px-5 py-4 w-full border rounded-lg text-md"
@@ -149,6 +153,7 @@ export const SignupForm = () => {
                                 <input
                                     type="checkbox"
                                     name="agreeToTerms"
+                                    data-testid="checkbox-input"
                                     onChange={handleInputChange}
                                     checked={formData.agreeToTerms}
                                     className="mt-1 sm:mt-0 mr-2"
@@ -164,7 +169,7 @@ export const SignupForm = () => {
                         </div>
 
                         <div>
-                            <Button onClick={null} type="submit" styles={'w-full'} flag={false} Component={<></>} text={'Create Account'} />
+                            <Button onClick={null} type="submit" data-testid="signup-button" styles={'w-full create-account-button'} flag={false} Component={<></>} text={'Create Account'} />
                         </div>
 
                     </form>
