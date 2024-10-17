@@ -23,11 +23,19 @@
     │   │   │   │   │   ├── Button.tsx.html
     │   │   │   │   │   ├── WhiteButton.tsx.html
     │   │   │   │   │   └── index.html
+    │   │   │   │   ├── Home
+    │   │   │   │   │   ├── UnderlineText.tsx.html
+    │   │   │   │   │   └── index.html
     │   │   │   │   ├── HorizontalScroll
     │   │   │   │   │   ├── Designers.tsx.html
     │   │   │   │   │   └── index.html
     │   │   │   │   └── auth
     │   │   │   │       ├── AuthPages.tsx.html
+    │   │   │   │       └── index.html
+    │   │   │   ├── components
+    │   │   │   │   └── auth
+    │   │   │   │       ├── LoginForm.tsx.html
+    │   │   │   │       ├── SignupForm.tsx.html
     │   │   │   │       └── index.html
     │   │   │   ├── favicon.png
     │   │   │   ├── index.html
@@ -89,27 +97,27 @@
     │   │   └── lcov.info
     │   ├── dist
     │   │   ├── assets
-    │   │   │   ├── Button-DP3KAdcV.js
-    │   │   │   ├── Dashboard-BptVGdl8.js
-    │   │   │   ├── Error-fRWG5YNg.js
-    │   │   │   ├── ExploreDesigns-DDQWS2Zm.js
-    │   │   │   ├── Home-DMTUQ27r.js
-    │   │   │   ├── Loader-D3-Dk19m.js
-    │   │   │   ├── Login-HPlb68Rm.js
+    │   │   │   ├── Button-Cn8HvUQG.js
+    │   │   │   ├── Dashboard-DhBdjJed.js
+    │   │   │   ├── Error-BX4N3FYH.js
+    │   │   │   ├── ExploreDesigns-DF8gkvFW.js
+    │   │   │   ├── Home-C_z3xTVH.js
+    │   │   │   ├── Loader-D_-n97Ep.js
+    │   │   │   ├── Login-CmMUeZ1a.js
     │   │   │   ├── Mona-Sans-CxWibSko.ttf
-    │   │   │   ├── Navbar-CVYLvM_Q.js
+    │   │   │   ├── Navbar-BD22Lg6V.js
     │   │   │   ├── Navbar-DsLgmgZ5.css
-    │   │   │   ├── OpenRoute-MtB1c2lk.js
-    │   │   │   ├── PrivateRoute-DX1ehYju.js
-    │   │   │   ├── Profile-CYLgQVwj.js
-    │   │   │   ├── Signup-D6Fed_mF.js
-    │   │   │   ├── Try-eF6xX8KE.js
-    │   │   │   ├── UnderlineText-Bdtvnf9h.js
-    │   │   │   ├── WhiteButton-CPXUd39-.js
-    │   │   │   ├── index-Ci0ggmOj.js
-    │   │   │   ├── index-_phLNkbs.css
-    │   │   │   ├── index-cwotrzEN.js
-    │   │   │   ├── index-tWfLRCcP.js
+    │   │   │   ├── OpenRoute-BH7rjuYH.js
+    │   │   │   ├── PrivateRoute-CqamCARR.js
+    │   │   │   ├── Profile-_raRHVnj.js
+    │   │   │   ├── Signup-DJNjD1IV.js
+    │   │   │   ├── Try-BYmBdTEV.js
+    │   │   │   ├── UnderlineText-57oumuvN.js
+    │   │   │   ├── WhiteButton-SssOf72O.js
+    │   │   │   ├── index-BC7E2Fye.js
+    │   │   │   ├── index-DaTZa9kq.js
+    │   │   │   ├── index-Dlepcakz.css
+    │   │   │   ├── index-yssX1oj8.js
     │   │   │   └── logo-eWEjui3M.svg
     │   │   ├── images
     │   │   │   └── vite.svg
